@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/28cd6d59b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Orinoco</title>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="navbar navbar-bc-color">
+        <a href="index.html">
+            <h1>Orinoco</h1>
+        </a>
+        <a href="./panier.html"><i class="fas fa-cart-plus fa-3x"></i></a>
+    </header>
+
+    <!--Contenu du panier-->
+    <main class="p-4">
+        <section class="p-4">
+            <h2>Votre panier:</h2>
+            <div id="section"></div>
+            <button type="button" class="btn btn-color"></button>
+        </section>
+
+        <!--Formulaire de validation-->
+        <section class="formulaire">
+            <form id="form">
+                <h2>Validez votre commande:</h2>
+                <div class="form-group">
+                    <label for="prenom">Votre prenom</label>
+                    <input type="text" class="form-control" id="clientPrenom">
+                </div>
+                <div class="form-group">
+                    <label for="nom">Votre nom</label>
+                    <input type="text"  class="form-control" id="clientNom">
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Votre adresse</label>
+                    <input type="text" required class="form-control" id="clientAdresse">
+                </div>
+                <div class="form-group">
+                    <label for="ville">Votre ville</label>
+                    <input type="text" class="form-control" id="clientVille">
+                </div>
+                <div class="form-group">
+                    <label for="email">Votre email</label>
+                    <input type="email"  class="form-control" placeholder="nom@exemple.com" id="clientEmail">
+                </div>
+                <button disabled id="validBtn" type="submit" class="btn btn-primary">Je valide</button>
+            </form>
+        </section>
+    </main>
+    <script src="JS/panier.js"></script>
+</body></html>

@@ -1,4 +1,4 @@
-// Recupère tous les Oursons
+// Recupère  les Oursons
 async function recupOursons() {
     const response = await fetch('http://localhost:3000/api/teddies');
     if (response.ok) {
@@ -8,7 +8,7 @@ async function recupOursons() {
     }
 }
 
-// Affiche tous les Oursons
+// Affiche  les Oursons
 async function affichOursons() {
     const datas = await recupOursons()
     for (let i = 0; i < datas.length; i++) {
